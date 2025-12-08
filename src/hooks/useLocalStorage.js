@@ -23,7 +23,7 @@ export const useLocalStorage = (key, defaultValue) => {
       console.error("Could not write to localstorage", error);
     }
     // trigger codeblock when value or key are changed
-  }, [value, key]);
+  }, [key, value]);
 
   //return variablke and setter
   return [value, setValue];
